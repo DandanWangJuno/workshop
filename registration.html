@@ -162,8 +162,15 @@ background-color: #555;
       
 <div class="container">  
     
-  <form method="post"  action="https://formspree.io/dandanwang0614@gmail.com">
-      
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="meftsevent@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbx5FcK1PifSZOrmfrWWZ_ryRO3T7V1uhFo2u-6K/exec">
+    <!-- change the form action to your script url -->
+
     <div class="row">
       <div class="col-25">
         <label for="fname">First Name</label>
@@ -214,11 +221,42 @@ background-color: #555;
       <input type="submit" value="Submit">
         
     </div>
-      
-      
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thank you</em> for Registration!
+        </h2>
+    </div>
+
   </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->   
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </div>
  
        
 </body>
-</html>
+</html>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
